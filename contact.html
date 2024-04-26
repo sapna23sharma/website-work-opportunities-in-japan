@@ -6,37 +6,64 @@
     <title>Jobs</title>
 </head>
 <style>
+    header {
+    background-color: #560861c4;
+    color: #fff;
+    padding: 20px;
+    }
+    nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
     .container{
-        background-color: #75128294;
+        background-color: #560861c4;
+        color: white;
     }
 </style>
 <body>
-    <section id="jobs">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="contact-info">
         <div class="container">
-            <h2>Available Jobs</h2>
-            <div class="job-list">
-                <div class="job">
-                    <h3>Software Engineer</h3>
-                    <p>Tech Co. - Tokyo</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed fermentum massa vel turpis feugiat, eget rhoncus lorem pulvinar. Nam nec efficitur mi, non facilisis erat. Nulla facilisi.</p>
-                </div>
-                <div class="job">
-                    <h3>Marketing Manager</h3>
-                    <p>Marketing Inc. - Osaka</p>
-                    <p>Integer convallis nulla vel urna pulvinar ullamcorper. Duis tempus, tortor vel viverra eleifend, augue dui iaculis metus, non fringilla nisi lorem nec magna.</p>
-                </div>
-                <div class="job">
-                    <h3>English Teacher</h3>
-                    <p>Language School - Kyoto</p>
-                    <p>Vivamus nec purus ut quam maximus cursus. Sed finibus tincidunt justo, a consequat leo finibus eget. Curabitur id magna nec metus ultricies fermentum.</p>
-                </div>
-                <div class="job">
-                    <h3>Graphic Designer</h3>
-                    <p>Design Agency - Tokyo</p>
-                    <p>Nullam congue malesuada mi, ac vehicula quam scelerisque nec. Sed bibendum, justo id tempor tristique, nisl ex egestas velit, in bibendum libero sapien in velit.</p>
-                </div>
-                <!-- Add more job listings as needed -->
-            </div>
+        <h2>Contact Information</h2>
+        <p>If you have any questions or inquiries, feel free to reach out to us:</p>
+        <ul>
+            <li>Email: info@workinjapan.com</li>
+            <li>Phone: +81-123-456-789</li>
+            <li>Address: 123 Example Street, Tokyo, Japan</li>
+        </ul>
+        <p>Alternatively, you can fill out the contact form below:</p>
+        <form id="contact-form" action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
         </div>
     </section>
 </body>
