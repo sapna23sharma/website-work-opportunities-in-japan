@@ -5,112 +5,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Work Opportunities in Japan</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
+</head>
+<style>
+    body {
     font-family: Arial, sans-serif;
+    background-color: #741c8094;
     margin: 0;
     padding: 0;
 }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
 header {
-    background-color: #333;
+    background-color: #75128294;
     color: #fff;
-    padding: 20px 0;
-}
+    padding: 20px;
 
-header h1 {
-    margin: 0;
 }
 
 nav ul {
+    
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
 nav ul li {
+   
     display: inline;
     margin-right: 20px;
 }
 
 nav ul li a {
-    color: #fff;
+   
+    color:white;
     text-decoration: none;
 }
 
 #hero {
-    background-image: url('japan.jpg');
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTedyMdP5CFp_TGdI16oCKnnasaz_rop6ubmg&s'); 
     background-size: cover;
-    color: #fff;
-    text-align: center;
-    padding: 100px 0;
+    opacity: 0.89;
+    color: rgb(71, 47, 47);
+    text-shadow: #75128294;
+    font-weight: bolder;
+    padding: 100px;
+    margin: 10px;
+    text-align:center;
 }
 
-.hero-content {
-    max-width: 600px;
-    margin: 0 auto;
+#jobs {
+    padding: 20px;
 }
-
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #009688;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.btn:hover {
-    background-color: #00796b;
-}
-
 
 footer {
-    background-color: #333;
+    background-color:#75128294;
     color: #fff;
     text-align: center;
-    padding: 20px 0;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.hover-card {
+    width: 300px;
+    height: 200px;
+    background-color: #966196;
+    color: white;
+    border: 1px solid #966196;
+    border-radius: 8px;
+    margin: 20px auto;
+    text-align: center;
+    padding:10px 200px 10px 200px;
+    box-shadow: #75128294;
+    transition: transform 0.3s ease-in-out;
 }
 
-    </style>
-</head>
-<script src="script.js"></script>
+.hover-card:hover {
+    transform: scale(1.05);
+}
+
+</style>
 <body>
     <header>
-        <div class="container">
-            <h1>Work Opportunities in Japan</h1>
-            <nav>
-                <ul>
-                    <li><a href="#">Home.html</a></li>
-                    <li><a href="#">About.html</a></li>
-                    <li><a href="#">Jobs.html</a></li>
-                    <li><a href="#">Contact.html</a></li>
-                </ul>
-            </nav>
-        </div>
+        <h1>Work Opportunities in Japan</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
     </header>
 
     <section id="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h2>Explore Exciting Career Paths in Japan</h2>
-                <p>Discover job opportunities, cultural experiences, and living in Japan.</p>
-                <a href="#" class="btn">Find Jobs</a>
-            </div>
-        </div>
+        <h2>Welcome to Work Opportunities in Japan</h2>
+        <p>Explore job listings and find your next career move in Japan.</p>
     </section>
-
+    <div class="hover-card">
+        <h3>Why Work in Japan?</h3>
+        <p>Japan offers unique cultural experiences, advanced technology, and a strong economy.</p>
+    </div>
     <footer>
-        <div class="container">
-            <p>&copy; 2024 Work Opportunities in Japan. All rights reserved.</p>
-        </div>
+        <p>&copy; 2024 Work Opportunities in Japan</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
